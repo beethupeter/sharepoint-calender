@@ -1,0 +1,108 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.flexContainer {
+  border: 2px solid black;
+  width: 700px;
+
+  .flexTitle {
+    text-align: center;
+    border-bottom: 2px solid black;
+
+    .left{
+      float: left;
+      width: 10px;
+      margin: 4px;
+      
+    }
+    .right{
+      float: right;
+      width: 10px;
+      margin: 4px;
+    }
+  }
+
+  .flexDayHeading {
+    display: flex;
+    border-bottom: 2px solid black;
+
+    div {
+      width: 100px;
+    }
+  }
+  
+  .flexRow {
+    display: flex;
+    border-bottom: 2px solid black;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+
+    div {
+      width: 100px;
+      border-right: 2px solid black;
+      height: 80px;
+      cursor: pointer;
+      padding: 5px;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+    .outsideDate {
+      color: #b4b0b0;
+    }
+  }
+  
+  
+  
+}
+  /* style for popup box */
+.popUpContainer {
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  margin: 50px;
+
+  .popUpClose {
+    float: right;
+    padding-right: 5px;
+    color: red;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 20px;
+  }
+  
+  .listBox{
+    border: 2px solid black;
+    height: calc(100% - 90px);
+    margin: 15px;
+    padding: 10px;
+    list-style: none;
+    .list{
+      list-style: none;
+    }
+  
+  }
+ 
+  .buttonBox{
+    display: flex;
+    margin: 15px; 
+    justify-content: space-between;  
+    
+    .popUpText{
+      width: calc(100% - 90px);
+      border: 2px solid black;
+      padding-left: 10px;
+    } 
+  }
+ 
+  .popUpButton{
+    width: 70px;
+    border: 2px solid black;
+  }
+}
